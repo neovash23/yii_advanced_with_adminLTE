@@ -17318,3 +17318,157 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1472024093.356
     'REQUEST_TIME' => 1472024093
 ]
+2016-09-01 08:28:34 [::1][-][72t81kllhrcdjfcop7n7up2qp4][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "images/globe.png".' in D:\xampp\htdocs\hris\vendor\yiisoft\yii2\base\Module.php:460
+Stack trace:
+#0 D:\xampp\htdocs\hris\vendor\yiisoft\yii2\web\Application.php(87): yii\base\Module->runAction('images/globe.pn...', Array)
+#1 D:\xampp\htdocs\hris\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 D:\xampp\htdocs\hris\backend\web\index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in D:\xampp\htdocs\hris\vendor\yiisoft\yii2\web\Application.php:99
+Stack trace:
+#0 D:\xampp\htdocs\hris\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\xampp\htdocs\hris\backend\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2016-09-01 08:28:33 [::1][-][72t81kllhrcdjfcop7n7up2qp4][info][application] $_COOKIE = [
+    '_identity' => '82da37c4e30290682ed51087a78064aa5d6adc9c39f90c6d4aa5e59f01f92743a:2:{i:0;s:9:\"_identity\";i:1;s:47:\"[28,\"s_r6kfLkKhTXtBoLV4rhTXU6dX7MO5RV\",2592000]\";}'
+    'XSRF-TOKEN' => 'eyJpdiI6InpJbzhvempVTktpTXp4RzBsWjRVVlE9PSIsInZhbHVlIjoiMkJkRDRCK0dVREtwaVRBUW14XC9YclBmTVBuRzI0dURGNnM1VFdHdThKb2NzckExaG5XRTZjaytHeTZqZlZGc25WQVZ0VWZrSXZ3Z0FyQXVBalRtaXVRPT0iLCJtYWMiOiI3ZTBlMTE3MjhkOTlkOWRmMWM2Y2E2Yzc3NDQ3MWQyZWM0MWNiOWNiYWY3NmUxMGJhNGQwZTBjZDU4ZjcyN2UwIn0='
+    'laravel_session' => 'eyJpdiI6IktcL2FPck5hZ2cxam1XbDVWRmF2NU9nPT0iLCJ2YWx1ZSI6ImlLYzR5WDBJYnF0cHNaY1wvb1wvWXluRVQzNnlEcFFQbmRpUHQ3cDkyR2pDNVpZNXIwOWF0VitKbVNIVXViUytiWjBKNndDeGdtdHl6cGtuTWlIQmt3Rnc9PSIsIm1hYyI6IjI3NmM1OWI2MDE4NTJmM2MyODBmOGMxMTg2MzExN2UxZTAwOGQxZTY0NzVmYzAyYWI2NDcxZmNhNzNhYWVkNjIifQ=='
+    '_csrf-backend' => '46bf9927f991ae5d395baa46637f95915c0af6ad8ed00aba6261d8de2e1072e0a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"eufKGWZyyqorUm_y1bE0tIVC9dmz30UI\";}'
+    'advanced-backend' => '72t81kllhrcdjfcop7n7up2qp4'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/hris/backend/web/'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'D:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'D:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'D:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'D:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36'
+    'HTTP_ACCEPT' => 'image/webp,image/*,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/hris/backend/web/site/login'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_identity=82da37c4e30290682ed51087a78064aa5d6adc9c39f90c6d4aa5e59f01f92743a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A47%3A%22%5B28%2C%22s_r6kfLkKhTXtBoLV4rhTXU6dX7MO5RV%22%2C2592000%5D%22%3B%7D; XSRF-TOKEN=eyJpdiI6InpJbzhvempVTktpTXp4RzBsWjRVVlE9PSIsInZhbHVlIjoiMkJkRDRCK0dVREtwaVRBUW14XC9YclBmTVBuRzI0dURGNnM1VFdHdThKb2NzckExaG5XRTZjaytHeTZqZlZGc25WQVZ0VWZrSXZ3Z0FyQXVBalRtaXVRPT0iLCJtYWMiOiI3ZTBlMTE3MjhkOTlkOWRmMWM2Y2E2Yzc3NDQ3MWQyZWM0MWNiOWNiYWY3NmUxMGJhNGQwZTBjZDU4ZjcyN2UwIn0%3D; laravel_session=eyJpdiI6IktcL2FPck5hZ2cxam1XbDVWRmF2NU9nPT0iLCJ2YWx1ZSI6ImlLYzR5WDBJYnF0cHNaY1wvb1wvWXluRVQzNnlEcFFQbmRpUHQ3cDkyR2pDNVpZNXIwOWF0VitKbVNIVXViUytiWjBKNndDeGdtdHl6cGtuTWlIQmt3Rnc9PSIsIm1hYyI6IjI3NmM1OWI2MDE4NTJmM2MyODBmOGMxMTg2MzExN2UxZTAwOGQxZTY0NzVmYzAyYWI2NDcxZmNhNzNhYWVkNjIifQ%3D%3D; _csrf-backend=46bf9927f991ae5d395baa46637f95915c0af6ad8ed00aba6261d8de2e1072e0a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22eufKGWZyyqorUm_y1bE0tIVC9dmz30UI%22%3B%7D; advanced-backend=72t81kllhrcdjfcop7n7up2qp4'
+    'PATH' => 'C:\\Program Files (x86)\\Razer Chroma SDK\\bin;C:\\Program Files\\Razer Chroma SDK\\bin;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\3.0\\bin\\x86;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\3.0\\bin\\x64;C:\\Program Files\\Lenovo\\Fingerprint Manager Pro\\;C:\\Program Files\\Condusiv Technologies\\ExpressCache\\;C:\\Program Files (x86)\\Common Files\\Lenovo;C:\\SWTOOLS\\ReadyApps;D:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\nodejs\\;C:\\Users\\Mark Orosa\\AppData\\Roaming\\npm;C:\\adb;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\CloudFoundry;C:\\Program Files\\TortoiseGit\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Users\\Mark Orosa\\AppData\\Local\\Android\\sdk\\platform-tools;C:\\Users\\Mark Orosa\\AppData\\Local\\Android\\sdk\\tools;D:\\Installers\\apache-ant-1.9.4\\bin;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\Program Files\\Git\\cmd;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.5.15 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.5.15'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'D:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'D:/xampp/htdocs/hris/backend/web/index.php'
+    'REMOTE_PORT' => '50909'
+    'REDIRECT_URL' => '/hris/backend/web/images/globe.png'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/hris/backend/web/images/globe.png'
+    'SCRIPT_NAME' => '/hris/backend/web/index.php'
+    'PHP_SELF' => '/hris/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1472711313.876
+    'REQUEST_TIME' => 1472711313
+]
+2016-09-01 08:28:38 [::1][-][72t81kllhrcdjfcop7n7up2qp4][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "images/globe.png".' in D:\xampp\htdocs\hris\vendor\yiisoft\yii2\base\Module.php:460
+Stack trace:
+#0 D:\xampp\htdocs\hris\vendor\yiisoft\yii2\web\Application.php(87): yii\base\Module->runAction('images/globe.pn...', Array)
+#1 D:\xampp\htdocs\hris\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 D:\xampp\htdocs\hris\backend\web\index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in D:\xampp\htdocs\hris\vendor\yiisoft\yii2\web\Application.php:99
+Stack trace:
+#0 D:\xampp\htdocs\hris\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\xampp\htdocs\hris\backend\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2016-09-01 08:28:38 [::1][-][72t81kllhrcdjfcop7n7up2qp4][info][application] $_COOKIE = [
+    '_identity' => '82da37c4e30290682ed51087a78064aa5d6adc9c39f90c6d4aa5e59f01f92743a:2:{i:0;s:9:\"_identity\";i:1;s:47:\"[28,\"s_r6kfLkKhTXtBoLV4rhTXU6dX7MO5RV\",2592000]\";}'
+    'XSRF-TOKEN' => 'eyJpdiI6InpJbzhvempVTktpTXp4RzBsWjRVVlE9PSIsInZhbHVlIjoiMkJkRDRCK0dVREtwaVRBUW14XC9YclBmTVBuRzI0dURGNnM1VFdHdThKb2NzckExaG5XRTZjaytHeTZqZlZGc25WQVZ0VWZrSXZ3Z0FyQXVBalRtaXVRPT0iLCJtYWMiOiI3ZTBlMTE3MjhkOTlkOWRmMWM2Y2E2Yzc3NDQ3MWQyZWM0MWNiOWNiYWY3NmUxMGJhNGQwZTBjZDU4ZjcyN2UwIn0='
+    'laravel_session' => 'eyJpdiI6IktcL2FPck5hZ2cxam1XbDVWRmF2NU9nPT0iLCJ2YWx1ZSI6ImlLYzR5WDBJYnF0cHNaY1wvb1wvWXluRVQzNnlEcFFQbmRpUHQ3cDkyR2pDNVpZNXIwOWF0VitKbVNIVXViUytiWjBKNndDeGdtdHl6cGtuTWlIQmt3Rnc9PSIsIm1hYyI6IjI3NmM1OWI2MDE4NTJmM2MyODBmOGMxMTg2MzExN2UxZTAwOGQxZTY0NzVmYzAyYWI2NDcxZmNhNzNhYWVkNjIifQ=='
+    '_csrf-backend' => '46bf9927f991ae5d395baa46637f95915c0af6ad8ed00aba6261d8de2e1072e0a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"eufKGWZyyqorUm_y1bE0tIVC9dmz30UI\";}'
+    'advanced-backend' => '72t81kllhrcdjfcop7n7up2qp4'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/hris/backend/web/'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'D:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'D:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'D:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'D:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36'
+    'HTTP_ACCEPT' => 'image/webp,image/*,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/hris/backend/web/site/login'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_identity=82da37c4e30290682ed51087a78064aa5d6adc9c39f90c6d4aa5e59f01f92743a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A47%3A%22%5B28%2C%22s_r6kfLkKhTXtBoLV4rhTXU6dX7MO5RV%22%2C2592000%5D%22%3B%7D; XSRF-TOKEN=eyJpdiI6InpJbzhvempVTktpTXp4RzBsWjRVVlE9PSIsInZhbHVlIjoiMkJkRDRCK0dVREtwaVRBUW14XC9YclBmTVBuRzI0dURGNnM1VFdHdThKb2NzckExaG5XRTZjaytHeTZqZlZGc25WQVZ0VWZrSXZ3Z0FyQXVBalRtaXVRPT0iLCJtYWMiOiI3ZTBlMTE3MjhkOTlkOWRmMWM2Y2E2Yzc3NDQ3MWQyZWM0MWNiOWNiYWY3NmUxMGJhNGQwZTBjZDU4ZjcyN2UwIn0%3D; laravel_session=eyJpdiI6IktcL2FPck5hZ2cxam1XbDVWRmF2NU9nPT0iLCJ2YWx1ZSI6ImlLYzR5WDBJYnF0cHNaY1wvb1wvWXluRVQzNnlEcFFQbmRpUHQ3cDkyR2pDNVpZNXIwOWF0VitKbVNIVXViUytiWjBKNndDeGdtdHl6cGtuTWlIQmt3Rnc9PSIsIm1hYyI6IjI3NmM1OWI2MDE4NTJmM2MyODBmOGMxMTg2MzExN2UxZTAwOGQxZTY0NzVmYzAyYWI2NDcxZmNhNzNhYWVkNjIifQ%3D%3D; _csrf-backend=46bf9927f991ae5d395baa46637f95915c0af6ad8ed00aba6261d8de2e1072e0a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22eufKGWZyyqorUm_y1bE0tIVC9dmz30UI%22%3B%7D; advanced-backend=72t81kllhrcdjfcop7n7up2qp4'
+    'PATH' => 'C:\\Program Files (x86)\\Razer Chroma SDK\\bin;C:\\Program Files\\Razer Chroma SDK\\bin;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\3.0\\bin\\x86;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\3.0\\bin\\x64;C:\\Program Files\\Lenovo\\Fingerprint Manager Pro\\;C:\\Program Files\\Condusiv Technologies\\ExpressCache\\;C:\\Program Files (x86)\\Common Files\\Lenovo;C:\\SWTOOLS\\ReadyApps;D:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\nodejs\\;C:\\Users\\Mark Orosa\\AppData\\Roaming\\npm;C:\\adb;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\CloudFoundry;C:\\Program Files\\TortoiseGit\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Users\\Mark Orosa\\AppData\\Local\\Android\\sdk\\platform-tools;C:\\Users\\Mark Orosa\\AppData\\Local\\Android\\sdk\\tools;D:\\Installers\\apache-ant-1.9.4\\bin;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\Program Files\\Git\\cmd;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.5.15 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.5.15'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'D:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'D:/xampp/htdocs/hris/backend/web/index.php'
+    'REMOTE_PORT' => '50910'
+    'REDIRECT_URL' => '/hris/backend/web/images/globe.png'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/hris/backend/web/images/globe.png'
+    'SCRIPT_NAME' => '/hris/backend/web/index.php'
+    'PHP_SELF' => '/hris/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1472711318.699
+    'REQUEST_TIME' => 1472711318
+]
