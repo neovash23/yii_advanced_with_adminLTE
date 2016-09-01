@@ -15,7 +15,7 @@ use Imagine\Gd;
  * @property string $firstname
  * @property string $lastname
  * @property string $middle
- * @property string $company
+ * @property integer $company_id
  * @property string $position
  * @property string $mobile
  * @property string $email
@@ -43,7 +43,6 @@ class Profile extends \yii\db\ActiveRecord
 
     public function beforeSave($insert)
     {
-
         if (parent::beforeSave($insert)) {
             if($this->isNewRecord){
                 $this->created_by = Yii::$app->user->id;
@@ -71,42 +70,7 @@ class Profile extends \yii\db\ActiveRecord
                  'positonX' => 'right',
              ]);
             
-            if($file=UploadedFile::getInstance($this,'image'))
-            {   
-                
-                if ($file->size !== 0){
-
-                    $data = getimagesize($file->tempName);
-                    $width = $data[0];
-                    $height = $data[1];
-
-                    $targetWidth = 400;
-                    if($width <= $height){
-                        $ratio = $width / $height;
-                    }else {
-                        $ratio = $height / $width;
-                    }
-                    $targetHeight = number_format($targetWidth * $ratio,0);
-
-                    //die($targetHeight);
-                    Image::thumbnail($file->tempName, $targetWidth,$targetHeight)
-                        ->save(Yii::getAlias('upload/thumbs/thumb-test-image.jpg'), ['quality' => 100]);
-
-
-                    if(is_file('upload/thumbs/thumb-test-image.jpg')){
-                        $this->image=  base64_encode(file_get_contents('upload/thumbs/thumb-test-image.jpg'));
-                        $this->cropped_image = '';
-                        unlink('upload/thumbs/thumb-test-image.jpg');
-                    }  
-                }
-                // $image = imagecreatefromstring(file_get_contents($file->tempName));
-                // print_r($image);
-                // die();
-
-            } else {
-                 if($this->image == '' && isset($this->oldAttributes['image']))
-                    $this->image = $this->oldAttributes['image'];
-            }
+           
 
             return true;
         } else {
@@ -127,10 +91,10 @@ class Profile extends \yii\db\ActiveRecord
             [['email'], 'unique'],
             [['email'], 'email'],
             ['image', 'file', 'extensions' => ['png', 'jpg'], 'maxSize' => 1024*1024,'skipOnEmpty' => true],
-            [['created_at', 'updated_at','cropped_image','company'], 'safe'],
+            [['created_at', 'updated_at','cropped_image','company_id'], 'safe'],
             [['created_by', 'updated_by'], 'integer'],
             [['firstname', 'lastname', 'middle', 'position'], 'string', 'max' => 50],
-            [['company'], 'string', 'max' => 100],
+            [['company_id'], 'integer', 'max' => 11],
             [['mobile'], 'string', 'max' => 20],
             [['email'], 'string', 'max' => 70],
         ];
@@ -146,7 +110,7 @@ class Profile extends \yii\db\ActiveRecord
             'firstname' => 'Firstname',
             'lastname' => 'Lastname',
             'middle' => 'Middle',
-            'company' => 'Company',
+            'company_id' => 'company_id',
             'position' => 'Position',
             'mobile' => 'Mobile',
             'email' => 'Email',
