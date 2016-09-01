@@ -22372,3 +22372,99 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1472717439.359
     'REQUEST_TIME' => 1472717439
 ]
+2016-09-01 10:40:06 [::1][28][1ab2d39gt1q7skathkk44bv5i2][error][yii\base\UnknownClassException] exception 'yii\base\UnknownClassException' with message 'Unable to find 'app\assets\SweetAlertAsset' in file: D:\xampp\htdocs\hris\backend/assets/SweetAlertAsset.php. Namespace missing?' in D:\xampp\htdocs\hris\vendor\yiisoft\yii2\BaseYii.php:291
+Stack trace:
+#0 [internal function]: yii\BaseYii::autoload('app\\assets\\Swee...')
+#1 [internal function]: spl_autoload_call('app\\assets\\Swee...')
+#2 D:\xampp\htdocs\hris\vendor\yiisoft\yii2\di\Container.php(422): ReflectionClass->__construct('app\\assets\\Swee...')
+#3 D:\xampp\htdocs\hris\vendor\yiisoft\yii2\di\Container.php(362): yii\di\Container->getDependencies('app\\assets\\Swee...')
+#4 D:\xampp\htdocs\hris\vendor\yiisoft\yii2\di\Container.php(154): yii\di\Container->build('app\\assets\\Swee...', Array, Array)
+#5 D:\xampp\htdocs\hris\vendor\yiisoft\yii2\BaseYii.php(344): yii\di\Container->get('app\\assets\\Swee...', Array, Array)
+#6 D:\xampp\htdocs\hris\vendor\yiisoft\yii2\web\AssetManager.php(264): yii\BaseYii::createObject(Array)
+#7 D:\xampp\htdocs\hris\vendor\yiisoft\yii2\web\AssetManager.php(237): yii\web\AssetManager->loadBundle('app\\assets\\Swee...', Array, true)
+#8 D:\xampp\htdocs\hris\vendor\yiisoft\yii2\web\View.php(284): yii\web\AssetManager->getBundle('app\\assets\\Swee...')
+#9 D:\xampp\htdocs\hris\vendor\yiisoft\yii2\web\View.php(289): yii\web\View->registerAssetBundle('app\\assets\\Swee...', NULL)
+#10 D:\xampp\htdocs\hris\vendor\yiisoft\yii2\web\AssetBundle.php(123): yii\web\View->registerAssetBundle('backend\\assets\\...')
+#11 D:\xampp\htdocs\hris\backend\views\layouts\main.php(27): yii\web\AssetBundle::register(Object(yii\web\View))
+#12 D:\xampp\htdocs\hris\vendor\yiisoft\yii2\base\View.php(326): require('D:\\xampp\\htdocs...')
+#13 D:\xampp\htdocs\hris\vendor\yiisoft\yii2\base\View.php(248): yii\base\View->renderPhpFile('D:\\xampp\\htdocs...', Array)
+#14 D:\xampp\htdocs\hris\vendor\yiisoft\yii2\base\Controller.php(393): yii\base\View->renderFile('D:\\xampp\\htdocs...', Array, Object(backend\controllers\UserController))
+#15 D:\xampp\htdocs\hris\vendor\yiisoft\yii2\base\Controller.php(379): yii\base\Controller->renderContent('<div class="use...')
+#16 D:\xampp\htdocs\hris\backend\controllers\UserController.php(63): yii\base\Controller->render('index', Array)
+#17 [internal function]: backend\controllers\UserController->actionIndex()
+#18 D:\xampp\htdocs\hris\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#19 D:\xampp\htdocs\hris\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#20 D:\xampp\htdocs\hris\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('', Array)
+#21 D:\xampp\htdocs\hris\vendor\yiisoft\yii2\web\Application.php(87): yii\base\Module->runAction('user', Array)
+#22 D:\xampp\htdocs\hris\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#23 D:\xampp\htdocs\hris\backend\web\index.php(17): yii\base\Application->run()
+#24 {main}
+2016-09-01 10:40:05 [::1][28][1ab2d39gt1q7skathkk44bv5i2][info][application] $_COOKIE = [
+    '_identity' => '82da37c4e30290682ed51087a78064aa5d6adc9c39f90c6d4aa5e59f01f92743a:2:{i:0;s:9:\"_identity\";i:1;s:47:\"[28,\"s_r6kfLkKhTXtBoLV4rhTXU6dX7MO5RV\",2592000]\";}'
+    '_csrf-backend' => '46bf9927f991ae5d395baa46637f95915c0af6ad8ed00aba6261d8de2e1072e0a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"eufKGWZyyqorUm_y1bE0tIVC9dmz30UI\";}'
+    'advanced-backend' => '1ab2d39gt1q7skathkk44bv5i2'
+    'XSRF-TOKEN' => 'eyJpdiI6ImM0YWhidVBwd1d5dVRUQ3FlM2NrZ0E9PSIsInZhbHVlIjoiMlprWDZkdUhvSHVnOXNkMnI2SjZrM2dMYkVNaitHRDNHS3lqV0trUFhabU9RQlE5OHRXZDM3Y084bUk5NlRVUzJEdVFITXhTOFc0OWtGbVhXT2lZXC9nPT0iLCJtYWMiOiJjMDE3NGViNDIwODVkNzk3Y2M3YTI1YjU3NDAwNTIxZDA4NjYxYzcyM2NlMDFjZGIwNGUxNGE5ZDJmMTY4ZWI4In0='
+    'laravel_session' => 'eyJpdiI6ImFxWUllWlA4UlA4c1hLUlY0YWp0VEE9PSIsInZhbHVlIjoiamw3UG9ic0h0RW9ueHFTSjRUaHUrTHVmWjNPTkxJbXZWZ1wveTVWaVM2d25qVXk5YlFFWCt2VTA2VFladHNSYnk3VUxIK1l6TFVJeGY4RExRUGZxYk5BPT0iLCJtYWMiOiJlNjIxMjIyNmVmZDRlNTliZjA0YTJkZWRmOGQzOGI5MDdmYTljNGM0M2E5MjNlZWU1MTE4Yzk3ZDFhOGRhMWZhIn0='
+    '_identity-backend' => '47e417ab600e2f3be0e4bc61e15b7151e6876c5957ef78bb36b6212425a7d3d9a:2:{i:0;s:17:\"_identity-backend\";i:1;s:47:\"[28,\"s_r6kfLkKhTXtBoLV4rhTXU6dX7MO5RV\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/hris/backend/web/'
+    '__id' => 28
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'D:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'D:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'D:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'D:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/hris/backend/web/user/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_identity=82da37c4e30290682ed51087a78064aa5d6adc9c39f90c6d4aa5e59f01f92743a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A47%3A%22%5B28%2C%22s_r6kfLkKhTXtBoLV4rhTXU6dX7MO5RV%22%2C2592000%5D%22%3B%7D; _csrf-backend=46bf9927f991ae5d395baa46637f95915c0af6ad8ed00aba6261d8de2e1072e0a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22eufKGWZyyqorUm_y1bE0tIVC9dmz30UI%22%3B%7D; advanced-backend=1ab2d39gt1q7skathkk44bv5i2; XSRF-TOKEN=eyJpdiI6ImM0YWhidVBwd1d5dVRUQ3FlM2NrZ0E9PSIsInZhbHVlIjoiMlprWDZkdUhvSHVnOXNkMnI2SjZrM2dMYkVNaitHRDNHS3lqV0trUFhabU9RQlE5OHRXZDM3Y084bUk5NlRVUzJEdVFITXhTOFc0OWtGbVhXT2lZXC9nPT0iLCJtYWMiOiJjMDE3NGViNDIwODVkNzk3Y2M3YTI1YjU3NDAwNTIxZDA4NjYxYzcyM2NlMDFjZGIwNGUxNGE5ZDJmMTY4ZWI4In0%3D; laravel_session=eyJpdiI6ImFxWUllWlA4UlA4c1hLUlY0YWp0VEE9PSIsInZhbHVlIjoiamw3UG9ic0h0RW9ueHFTSjRUaHUrTHVmWjNPTkxJbXZWZ1wveTVWaVM2d25qVXk5YlFFWCt2VTA2VFladHNSYnk3VUxIK1l6TFVJeGY4RExRUGZxYk5BPT0iLCJtYWMiOiJlNjIxMjIyNmVmZDRlNTliZjA0YTJkZWRmOGQzOGI5MDdmYTljNGM0M2E5MjNlZWU1MTE4Yzk3ZDFhOGRhMWZhIn0%3D; _identity-backend=47e417ab600e2f3be0e4bc61e15b7151e6876c5957ef78bb36b6212425a7d3d9a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A47%3A%22%5B28%2C%22s_r6kfLkKhTXtBoLV4rhTXU6dX7MO5RV%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\Program Files (x86)\\Razer Chroma SDK\\bin;C:\\Program Files\\Razer Chroma SDK\\bin;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\3.0\\bin\\x86;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\3.0\\bin\\x64;C:\\Program Files\\Lenovo\\Fingerprint Manager Pro\\;C:\\Program Files\\Condusiv Technologies\\ExpressCache\\;C:\\Program Files (x86)\\Common Files\\Lenovo;C:\\SWTOOLS\\ReadyApps;D:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\nodejs\\;C:\\Users\\Mark Orosa\\AppData\\Roaming\\npm;C:\\adb;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\CloudFoundry;C:\\Program Files\\TortoiseGit\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Users\\Mark Orosa\\AppData\\Local\\Android\\sdk\\platform-tools;C:\\Users\\Mark Orosa\\AppData\\Local\\Android\\sdk\\tools;D:\\Installers\\apache-ant-1.9.4\\bin;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\Program Files\\Git\\cmd;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.5.15 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.5.15'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'D:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'D:/xampp/htdocs/hris/backend/web/index.php'
+    'REMOTE_PORT' => '58429'
+    'REDIRECT_URL' => '/hris/backend/web/user'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/hris/backend/web/user'
+    'SCRIPT_NAME' => '/hris/backend/web/index.php'
+    'PHP_SELF' => '/hris/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1472719205.947
+    'REQUEST_TIME' => 1472719205
+]
