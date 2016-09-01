@@ -43,33 +43,40 @@
                     // ['label' => 'Dev Tools', 'options' => ['class' => 'header'],'visible' => !YII_ENV_TEST],
                     // ['label' => 'Gii', 'icon' => 'fa fa-file-code-o', 'url' => ['/gii'],'visible' => !YII_ENV_TEST],
                     // ['label' => 'Debug', 'icon' => 'fa fa-dashboard', 'url' => ['/debug'],'visible' => !YII_ENV_TEST],
+                    [
+                        'label' => 'RBAC Manager',
+                        'icon' => 'fa fa-share',
+                        'url' => '#',
+                        'items' => [
+                            ['label' => 'Assign Roles', 'icon' => 'fa fa-file-code-o', 'url' => ['/admin'],],
+                            ['label' => 'Routes', 'icon' => 'fa fa-dashboard', 'url' => ['/admin/route'],],
+                            ['label' => 'Permissions', 'icon' => 'fa fa-file-code-o', 'url' => ['/admin/permission'],],
+                            ['label' => 'Menu', 'icon' => 'fa fa-dashboard', 'url' => ['/admin/menu'],],
+                            ['label' => 'Role', 'icon' => 'fa fa-file-code-o', 'url' => ['/admin/role'],],
+                            ['label' => 'User', 'icon' => 'fa fa-dashboard', 'url' => ['/admin/user'],],
+                            //['label' => 'Assignment', 'icon' => 'fa fa-file-code-o', 'url' => ['/admin/assignment'],],
+                            // [
+                            //     'label' => 'Level One',
+                            //     'icon' => 'fa fa-circle-o',
+                            //     'url' => '#',
+                            //     'items' => [
+                            //         ['label' => 'Level Two', 'icon' => 'fa fa-circle-o', 'url' => '#',],
+                            //         [
+                            //             'label' => 'Level Two',
+                            //             'icon' => 'fa fa-circle-o',
+                            //             'url' => '#',
+                            //             'items' => [
+                            //                 ['label' => 'Level Three', 'icon' => 'fa fa-circle-o', 'url' => '#',],
+                            //                 ['label' => 'Level Three', 'icon' => 'fa fa-circle-o', 'url' => '#',],
+                            //             ],
+                            //         ],
+                            //     ],
+                            // ],
+                        ],
+                    ],
+                    ['label' => 'Gii', 'icon' => 'fa fa-file-code-o', 'url' => ['/gii'],],
+                    ['label' => 'Debug', 'icon' => 'fa fa-dashboard', 'url' => ['/debug'],],
                     ['label' => 'Login', 'url' => ['site/login'], 'visible' => Yii::$app->user->isGuest],
-                    // [
-                    //     'label' => 'Same tools',
-                    //     'icon' => 'fa fa-share',
-                    //     'url' => '#',
-                    //     'items' => [
-                    //         ['label' => 'Gii', 'icon' => 'fa fa-file-code-o', 'url' => ['/gii'],],
-                    //         ['label' => 'Debug', 'icon' => 'fa fa-dashboard', 'url' => ['/debug'],],
-                    //         [
-                    //             'label' => 'Level One',
-                    //             'icon' => 'fa fa-circle-o',
-                    //             'url' => '#',
-                    //             'items' => [
-                    //                 ['label' => 'Level Two', 'icon' => 'fa fa-circle-o', 'url' => '#',],
-                    //                 [
-                    //                     'label' => 'Level Two',
-                    //                     'icon' => 'fa fa-circle-o',
-                    //                     'url' => '#',
-                    //                     'items' => [
-                    //                         ['label' => 'Level Three', 'icon' => 'fa fa-circle-o', 'url' => '#',],
-                    //                         ['label' => 'Level Three', 'icon' => 'fa fa-circle-o', 'url' => '#',],
-                    //                     ],
-                    //                 ],
-                    //             ],
-                    //         ],
-                    //     ],
-                    // ],
                 ],
             ]
         ) ?>

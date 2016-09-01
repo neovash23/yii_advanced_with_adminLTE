@@ -23,30 +23,6 @@ class UserController extends Controller
          Yii::$app->view->params['item']= 'user';
     }
 
-    public function behaviors()
-    {
-        return [
-            'access' => [
-                'class' => \yii\filters\AccessControl::className(),
-                'only' => ['create', 'update','index','delete'],
-                'rules' => [
-                    // deny all POST requests
-                    [
-                        'allow' => true,
-                        'verbs' => ['POST']
-                    ],
-                    // allow authenticated users
-                    [
-                       // 'actions' => ['index'],
-                        'allow' => Yii::$app->user->identity->isAdmin(),
-                        'roles' => ['@'],
-                    ],
-                    // everything else is denied
-                ],
-            ],
-        ];
-    }
-
 
     /**
      * Lists all User models.

@@ -54,7 +54,7 @@ if (Yii::$app->controller->action->id === 'login') {
 
         <?= $this->render(
             'left.php',
-            ['directoryAsset' => $directoryAsset, 'item'=>$this->params['item']]
+            ['directoryAsset' => $directoryAsset, 'item'=>isset($this->params['item'])? $this->params['item'] : '']
         )
         ?>
 
