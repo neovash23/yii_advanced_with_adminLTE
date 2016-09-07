@@ -1,2 +1,6 @@
 <?php
-return [];
+return [
+    28 => [
+        'Super Admin',
+    ],
+];

@@ -15,12 +15,9 @@ use Imagine\Gd;
  * @property string $firstname
  * @property string $lastname
  * @property string $middle
- * @property integer $company_id
- * @property string $position
  * @property string $mobile
  * @property string $email
  * @property resource $image
- * @property string $type
  * @property string $created_at
  * @property string $updated_at
  * @property integer $created_by
@@ -78,8 +75,6 @@ class Profile extends \yii\db\ActiveRecord
         }
     }
 
-
-
     /**
      * @inheritdoc
      */
@@ -87,14 +82,13 @@ class Profile extends \yii\db\ActiveRecord
     {
         return [
             [['firstname', 'lastname'], 'required'],
-            [['image', 'type'], 'string'],
+            [['image'], 'string'],
             [['email'], 'unique'],
             [['email'], 'email'],
             ['image', 'file', 'extensions' => ['png', 'jpg'], 'maxSize' => 1024*1024,'skipOnEmpty' => true],
-            [['created_at', 'updated_at','cropped_image','company_id'], 'safe'],
+            [['created_at', 'updated_at','cropped_image'], 'safe'],
             [['created_by', 'updated_by'], 'integer'],
-            [['firstname', 'lastname', 'middle', 'position'], 'string', 'max' => 50],
-            [['company_id'], 'integer', 'max' => 11],
+            [['firstname', 'lastname', 'middle'], 'string', 'max' => 50],
             [['mobile'], 'string', 'max' => 20],
             [['email'], 'string', 'max' => 70],
         ];
@@ -110,12 +104,9 @@ class Profile extends \yii\db\ActiveRecord
             'firstname' => 'Firstname',
             'lastname' => 'Lastname',
             'middle' => 'Middle',
-            'company_id' => 'company_id',
-            'position' => 'Position',
             'mobile' => 'Mobile',
             'email' => 'Email',
             'image' => 'Image',
-            'type' => 'Type',
             'created_at' => 'Created At',
             'updated_at' => 'Updated At',
             'created_by' => 'Created By',
@@ -123,27 +114,4 @@ class Profile extends \yii\db\ActiveRecord
         ];
     }
 
-    /**
-     * @return \yii\db\ActiveQuery
-     */
-    public function getEventAttendees()
-    {
-        return $this->hasMany(EventAttendees::className(), ['profile_id' => 'id']);
-    }
-
-    /**
-     * @return \yii\db\ActiveQuery
-     */
-    public function getEventRatings()
-    {
-        return $this->hasMany(EventRating::className(), ['profile_id' => 'id']);
-    }
-
-    /**
-     * @return \yii\db\ActiveQuery
-     */
-    public function getUserProfiles()
-    {
-        return $this->hasMany(UserProfile::className(), ['profile_id' => 'id']);
-    }
 }
