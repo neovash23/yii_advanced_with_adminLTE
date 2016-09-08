@@ -3,7 +3,6 @@
 use yii\helpers\Html;
 use yii\widgets\DetailView;
 use yii\bootstrap\Modal;
-use newerton\jcrop\Jcrop;
 use kartik\form\ActiveForm;
 use kartik\dialog\Dialog;
 /* @var $this yii\web\View */
@@ -65,7 +64,7 @@ Modal::begin([
 $form1 = ActiveForm::begin([
     'options'=>['enctype'=>'multipart/form-data'] // important
 ]);
-echo jCrop::widget([
+echo \newerton\jcrop\jCrop::widget([
     // Image URL
     'url' => 'data:image/jpeg;base64,'. $model->profile->image ,
     // options for the IMG element
