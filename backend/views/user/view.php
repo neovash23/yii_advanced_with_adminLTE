@@ -46,7 +46,7 @@ $this->params['breadcrumbs'][] = $this->title;
 
 ?>
 
-    <img class="profile-thubm" width="100px" 
+    <img class="profile-thumb" width="60px" 
          src="data:image/jpeg;base64,<?php echo $image; ?>"
          class="user-image" alt="User Image"/>
 <?php 

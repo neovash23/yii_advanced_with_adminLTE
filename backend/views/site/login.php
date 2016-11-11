@@ -21,11 +21,11 @@ $fieldOptions2 = [
 
 <div class="login-box">
     <div class="login-logo">
-        <a href="#"><?= Html::img('@web/images/logo.png');?></a>
+        <a href="#"><?= Yii::$app->name; ?></a>
     </div>
     <!-- /.login-logo -->
     <div class="login-box-body">
-        <p class="login-box-msg">CMS</p>
+        <p class="login-box-msg">Enter login credentials</p>
 
         <?php $form = ActiveForm::begin(['id' => 'login-form', 'enableClientValidation' => false]); ?>
 
@@ -63,14 +63,14 @@ $fieldOptions2 = [
         <!-- /.social-auth-links -->
 
         <a href="#">I forgot my password</a><br>
-        <a href="register.html" class="text-center">Register a new membership</a>
+        
 
     </div>
 
-                    <div class="row poweredby">  
+                <div class="row poweredby">  
                     <span>powered  by</span>
                     <div class="col-md-12">
-                        <a href="#"><?= Html::img('@web/images/globe.png');?></a>
+                        Yii 2
                     </div>
                 </div>
     <!-- /.login-box-body -->

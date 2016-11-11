@@ -22,9 +22,21 @@ $('#crop_imageId').click(function(){
                         {
 		location.reload();
 
-    }, 200);
+    }, 1000);
 });
 
+$('.cropModal').click(function(){
+  	setTimeout( function() 
+                        {
+    imagewidth = $('#imageId').width()+30;
+		console.log(imagewidth);
+
+    $('.modal-content').attr(
+      "style" , "width:" + imagewidth + "px"
+    );
+
+    }, 300);
+})
 
 $('#event-palette').change(function(){
   var imgLoc = $('img#palette').attr("src");

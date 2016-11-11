@@ -6,7 +6,7 @@ use yii\helpers\Html;
 
 <header class="main-header">
 
-    <?= Html::a('<span class="logo-mini">'. Html::img('@web/images/logo.png',['style'=>'width: 43px;']).'</span><span class="logo-lg">' . Html::img('@web/images/logo.png',['style'=>'width: 63px;']) . '</span>', Yii::$app->homeUrl, ['class' => 'logo']) ?>
+    <?= Html::a('<span class="logo-mini">BD</span><span class="logo-lg">' . Yii::$app->name . '</span>', Yii::$app->homeUrl, ['class' => 'logo']) ?>
 
     <nav class="navbar navbar-static-top" role="navigation">
 
