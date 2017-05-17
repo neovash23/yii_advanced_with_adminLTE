@@ -15,7 +15,13 @@ return [
     'modules' => [
         'admin' => [
             'class' => 'mdm\admin\Module',
-        ]
+        ],
+        'gridview' => [
+          'class' => '\kartik\grid\Module',
+        ],
+        'datecontrol' => [
+            'class' => 'kartik\datecontrol\Module',
+        ],
     ],
     'components' => [
         'authManager' => [

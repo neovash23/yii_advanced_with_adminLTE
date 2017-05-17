@@ -35,11 +35,13 @@
         "c006/yii2-migration-utility": "dev-master",
         "ivkos/pushbullet": "3.*",
         "pusher/pusher-php-server": "^2.3",
-        "kartik-v/yii2-tabs-x": "*",
+        "kartik-v/yii2-tabs-x": "@dev",
         "kartik-v/yii2-popover-x": "*",
         "dmstr/yii2-adminlte-asset": "2.*",
         "yiisoft/yii2-swiftmailer": "*",
-        "mdmsoft/yii2-admin": "~2.0"
+        "mootensai/yii2-enhanced-gii": "*",        
+        "mdmsoft/yii2-admin": "~2.0",
+        "kartik-v/yii2-krajee-base": "dev-master"
     },
     "require-dev": {
         "codeception/base": "^2.2.3",
