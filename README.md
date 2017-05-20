@@ -36,7 +36,7 @@ import yii_basic_migration.sql in your database
 Update Composer
 ``` 
 //in your project folder, run cmd command
-composer global require "fxp/composer-asset-plugin:^1.2.0"
+composer global require "fxp/composer-asset-plugin:^1.3.1"
 
 composer update
 
