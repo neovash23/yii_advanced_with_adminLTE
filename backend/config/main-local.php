@@ -18,7 +18,16 @@ if (!YII_ENV_TEST) {
 
     $config['bootstrap'][] = 'gii';
     $config['modules']['gii'] = [
-        'class' => 'yii\gii\Module',
+		'class' => 'yii\gii\Module',
+		'allowedIPs' => ['*'],
+        'generators' => [ //here
+            'crud' => [
+                'class' => 'yii\gii\generators\crud\Generator',
+                'templates' => [
+                    'adminlte' => '@vendor/dmstr/yii2-adminlte-asset/gii/templates/crud/simple',
+                ]
+            ]
+        ],		
     ];
 }
 
